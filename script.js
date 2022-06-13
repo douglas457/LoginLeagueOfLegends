@@ -6,8 +6,7 @@ let user = document.getElementById('user')
 let password = document.getElementById('password')
 
 setInterval (function valida_form (){
-    if(nome.value.length >= 4)
-    if (document.getElementById("senha").value.length >= 4) {
+    if(nome.value.length >= 4 && senha.value.length >= 4) {
     seta.style.color = "white";
     seta.style.backgroundColor = "#d13639";
     seta.style.border = "none";
