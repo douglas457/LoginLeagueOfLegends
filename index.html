@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of legends</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <main>
+        <div class="div1">
+            <img class="logo" src="./img/logo.png" width="150px" alt="logo">
+
+            <p class="primary-text">Fazer login<p>
+
+            <div class="divform">
+                <form action="/" method="get" onsubmit="" >
+                    <input id="nome" class="login" type="text"  required>
+                    <label for="" class="label1" id="user">NOME DE USUÁRIO</label>
+                    <input id="senha" class="login" type="password"  onfocusout="focusout()" required>
+                    <label for="" class="label2" id="password">SENHA</label>
+                    <span>
+                        <img id="eye" class="fa-eye" src="./img/eye-solid.svg" alt=""  onclick="olho()">
+                    </span>
+                    <input id="submit" type="submit" value="submit">
+                </form>
+            </div>
+
+
+            <div class="social-media">
+                
+                <div class="social-media-div-1">
+                    <img class="social-media-img" src="./img/facebook-icon.png" alt="">
+                </div>
+
+                <div class="social-media-div-2">
+                    <img class="social-media-img" src="./img/google-icon.png" alt="">
+                </div>
+
+                <div class="social-media-div-3">
+                    <img class="social-media-img" src="./img/apple-icon.png" alt="">
+                </div>
+
+            </div>
+
+            <label class="container">Manter login
+                <input  type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+            <label for="submit"><i id="seta" class="fa-solid fa-arrow-right"></i></label>
+            <div class="footer">
+            <a href="#">NÃO CONSEGUE INICIAR SESSÃO?</a> <br>
+            <a href="#">CRIAR CONTA</a>
+            </div>
+        </div>
+        <div class="div2">
+            <i class="fa-solid fa-user"></i>
+        </div>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>

@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+}
+
+.div1 {
+    background-color: rgb(250, 250, 250);
+    height: 100vh;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.div2 {
+    background: url(./img/wallpaper.png);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+
+.logo {
+    margin-top: 100px;
+}
+
+.primary-text {
+    font-size: 23px;
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.login {
+    display: block;
+    padding: 17px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(20, 20, 20);
+    border: none;
+    background-color: rgb(240, 240, 240);
+    width: 80%;
+    
+}
+
+.login:hover {
+    background-color: rgb(220, 220, 220);
+}
+
+.login:focus {
+    background-color: rgb(239, 239, 239);
+}
+
+
+.social-media {
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+.social-media-div-1 {
+    background-color: rgb(0, 128, 255);
+    width: 100px;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.social-media-div-2 {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-top: 7px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    border: 1px solid rgb(229, 229, 229);
+}
+
+.social-media-div-3 {
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.social-media-img {
+    width: 17px;
+}
+
+.social-media-div-1:hover {
+    background-color: rgb(1, 111, 221);
+}
+
+.social-media-div-2:hover {
+    background-color: rgb(243, 243, 243);
+}
+
+.social-media-div-3:hover {
+    background-color: rgb(35, 35, 35); 
+}
+
+
+#check:checked {
+    accent-color: red;
+}
+
+
+
+label {
+    font-size: 13px;
+    margin-right: 160px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#seta {
+    position: absolute;
+    top: 80%;
+    left: 8%;
+    border: 2px solid #e3e3e3;
+    padding: 21px;
+    border-radius: 20px;
+    color: #e3e3e3;
+    font-size: 25px;
+}
+
+
+
+.footer {
+    position: absolute;
+    top: 90%;
+    left: 100px;
+}
+
+a {
+    color: gray;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: black;
+}
+
+#submit {
+    display: none;
+}
+
+.fa-user {
+    float: right;
+    font-size: 22px;
+    background-color: rgba(83, 83, 83, 0.445);
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.705);
+    border-radius: 15px;
+    margin: 20px 20px;
+}
+
+.fa-user:hover {
+    color: white;
+    transition: .5s;
+}
+
+.fa-eye {
+    position: relative;
+    left: 35%;
+    bottom: 30px;
+    width: 20px;
+    opacity: 0;
+}
+
+.esconder {
+    background: url(./img/eye-slash-solid.svg) no-repeat center center;
+}
+
+.checkbox {
+    margin-top: 10px;
+    display: inline;
+    position: relative;
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+
+.container {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 10px;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+ 
+  .checkmark {
+    position: absolute;
+    top: 5px;
+    left: 40px;
+    height: 17px;
+    width: 17px;
+    background-color: rgb(239, 239, 239);
+    border-radius: 5px;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #c51010;
+  }
+
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .container .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 3px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .divform {
+    position: relative;
+  }
+
+  .label1 {
+    font-family: 'Poppins', sans-serif;
+    transition: .1s linear;
+    position: absolute;
+    top: 20px;
+    font-size: 11px;
+    left: 60px;
+    color: rgb(170, 170, 170);
+    font-weight: bold;
+  }
+
+  .label2 {
+    font-family: 'Poppins', sans-serif;
+    transition: .1s linear;
+    position: absolute;
+    top: 85px;
+    font-size: 11px;
+    left: 60px;
+    color: rgb(170, 170, 170);
+  }
+
+  input:focus + .label1 {
+    top: 2px;
+    left: 45px;
+  }
+
+  input:focus + .label2 {
+    top: 67px;
+    left: 45px;
+  }
+
+  .teste1 {
+    top: 2px;
+    left: 45px;
+  }
+
+  .teste2 {
+    top: 67px;
+    left: 45px;
+  }
+
+  .label1, .label2:hover {
+    cursor: auto;
+  }
